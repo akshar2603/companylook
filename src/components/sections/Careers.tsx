@@ -34,7 +34,7 @@ const Career: React.FC = () => {
     formData.append('resume', resume);
 
     try {
-      const response = await fetch('https://company-backend-9e49.onrender.com/career', {
+      const response = await fetch('https://company-backend-9e49.onrender.com/api/career', {
         method: 'POST',
         body: formData,
       });
